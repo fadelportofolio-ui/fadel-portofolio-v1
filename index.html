@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fadel Muhammad | Creative Portfolio</title>
+    <title>Fadel Muhammad | Creative Dev Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
     <div class="cursor-glow" id="cursor-glow"></div>
 
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Fadel<span>.</span>M</a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="glass-nav">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand-logo glow-click">Fadel<span>.</span>M</a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#home" class="glow-click">Home</a></li>
+                <li><a href="#expertise" class="glow-click">Skills</a></li>
+                <li><a href="#work" class="glow-click">Projects</a></li>
+                <li><a href="#connect" class="nav-cta glow-click">Let's Talk</a></li>
             </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="menu-toggle" id="mobile-toggle">
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
@@ -33,64 +31,137 @@
     <section class="hero" id="home">
         <div class="container hero-container">
             <div class="hero-content reveal-left">
-                <span class="badge">Front-End Developer</span>
-                <h1>Hi, I'm <span class="highlight">Fadel Muhammad</span></h1>
-                <p>Membangun antarmuka web modern yang interaktif dan responsif. Berfokus pada pengalaman pengguna yang bersih, hidup, dan fungsional.</p>
+                <div class="status-pill">
+                    <span class="dot"></span> Available for new projects
+                </div>
+                <h1 class="hero-title">
+                    Digital <span class="gradient-text">Architect</span> <br>
+                    & UI Developer.
+                </h1>
+                <p class="hero-subtext">Membangun pengalaman digital yang estetik, kencang, dan fungsional dengan sentuhan teknologi modern.</p>
                 <div class="hero-btns">
-                    <a href="https://buylink.id/FADEL.PEDIA?utm_medium=social&utm_source=heylink.me" target="_blank" class="btn primary">Explore Project</a>
-                    <a href="#contact" class="btn secondary">Contact Me</a>
+                    <a href="#work" class="main-btn glow-click">View My Work</a>
+                    <a href="#expertise" class="alt-btn glow-click">Tech Stack</a>
                 </div>
             </div>
-            <div class="hero-image reveal-right">
-                <div class="photo-wrapper">
-                    <div class="blob-shape">
+            
+            <div class="hero-visual reveal-right">
+                <div class="profile-card">
+                    <div class="profile-mesh"></div>
+                    <div class="image-container">
                         <img src="Gemini_Generated_Image_550eml550eml550e.png" alt="Fadel Muhammad" id="profile-img">
                     </div>
+                    <div class="floating-tag t1">React Expert</div>
+                    <div class="floating-tag t2">UI Designer</div>
                     <div class="orbit-element"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skills" id="skills">
+    <section class="expertise" id="expertise">
         <div class="container">
-            <h2 class="section-title">My Tech Stack</h2>
+            <div class="section-head center">
+                <span class="pre-title">Core Skills</span>
+                <h2 class="title">My <span class="gradient-text">Tech Stack</span></h2>
+            </div>
             <div class="skills-grid">
-                <div class="skill-card reveal-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
-                <div class="skill-card reveal-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-                <div class="skill-card reveal-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
-                <div class="skill-card reveal-item"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="skill-box reveal-item glow-click" style="--brand-color: #E34F26;">
+                    <div class="skill-overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-box reveal-item glow-click" style="--brand-color: #1572B6;">
+                    <div class="skill-overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-box reveal-item glow-click" style="--brand-color: #F7DF1E;">
+                    <div class="skill-overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-box reveal-item glow-click" style="--brand-color: #61DAFB;">
+                    <div class="skill-overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <h3>React Native</h3>
+                </div>
+                <div class="skill-box reveal-item glow-click" style="--brand-color: #339933;">
+                    <div class="skill-overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-box reveal-item glow-click" style="--brand-color: #3776AB;">
+                    <div class="skill-overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    <h3>Python</h3>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="work" id="work">
         <div class="container">
-            <h2 class="section-title">Featured Work</h2>
-            <div class="project-single reveal-bottom">
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-wallet"></i></div>
+            <div class="section-head"><span class="pre-title">Recent Project</span><h2 class="title">Featured <span class="gradient-text">Work</span></h2></div>
+            
+            <div class="project-showcase reveal-bottom glow-click">
+                <div class="project-inner">
+                    <div class="project-media">
+                        <i class="fas fa-wallet media-icon"></i>
+                        <div class="media-glow"></div>
+                    </div>
                     <div class="project-info">
+                        <span class="project-type">Fintech & Digital Top-up</span>
                         <h3>Fadel Pedia</h3>
-                        <p>Platform pembayaran digital dan top-up game yang efisien.</p>
-                        <a href="https://buylink.id/FADEL.PEDIA?utm_medium=social&utm_source=heylink.me" target="_blank" class="link-btn">Kunjungi Situs <i class="fas fa-arrow-right"></i></a>
+                        <p>Platform payment gateway otomatis untuk top-up game. Seamless integration dengan UI yang sangat modern.</p>
+                        <a href="https://buylink.id/FADEL.PEDIA" target="_blank" class="visit-btn glow-click">Live Preview <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <div class="container text-center reveal-bottom">
-            <div class="contact-card">
-                <h2>Let's Connect</h2>
-                <p>Tertarik berkolaborasi? Hubungi saya melalui Instagram.</p>
-                <a href="https://instagram.com/fadell__muhammad" target="_blank" class="insta-link">
-                    <i class="fab fa-instagram"></i> @fadell__muhammad
-                </a>
+    <section class="feedback">
+        <div class="container">
+            <div class="section-head center"><h2 class="title">Client <span class="gradient-text">Reviews</span></h2></div>
+            <div class="feedback-grid">
+                <div class="review-card reveal-item glow-click">
+                    <div class="stars"><i class="fas fa-star"></i> 5.0</div>
+                    <p>"Hasilnya bener-bener modern dan sesuai tren sekarang! Sangat puas."</p>
+                    <div class="client">- PT Digital FXHeaven</div>
+                </div>
+                <div class="review-card reveal-item glow-click">
+                    <div class="stars"><i class="fas fa-star"></i> 5.0</div>
+                    <p>"Integrasi API yang tadinya ribet jadi gampang banget di tangan Fadel."</p>
+                    <div class="client">- Nexus AI Team</div>
+                </div>
+                <div class="review-card reveal-item glow-click">
+                    <div class="stars"><i class="fas fa-star"></i> 5.0</div>
+                    <p>"UI-nya smooth parah, user journey-nya juga dipikirin banget."</p>
+                    <div class="client">- Ahmad Rizky</div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="connect" id="connect">
+        <div class="container">
+            <div class="connect-card reveal-bottom glow-click">
+                <div class="connect-overlay"></div>
+                <div class="connect-text">
+                    <h2>Ready to Build Your <br><span class="highlight">Next Big Idea?</span></h2>
+                    <p>Mari berkolaborasi dan ciptakan sesuatu yang luar biasa.</p>
+                    <a href="https://instagram.com/fadell__muhammad" target="_blank" class="insta-call glow-click">
+                        <i class="fab fa-instagram"></i> Say Hi on Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Crafted by <strong>Fadel Muhammad</strong>. Bekasi, ID.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
